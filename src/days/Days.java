@@ -24,11 +24,15 @@ public class Days {
     public static void main(String[] args) {
          
     Scanner in =new Scanner(System.in);
-    System.out.println("Enter the day number (one,two,three,four,five) in string");
+    System.out.println("Enter the day (MONDAY, TUESDAY, WEDNESDAY, THURSDAY,...): ");
     String code = in.next();
+    Day day = Day.valueOf(code);
     Weekdays t= new Weekdays();
-    t.nameOfDay(code); 
+    t.nameOfDay(day);
+    for (Day days : Day.values()) {
+        System.out.println(days);
     }// TODO code application logic here
     
     
+}
 }

@@ -10,29 +10,29 @@ package days;
  */
 public class Weekdays 
 {
-  public void nameOfDay(String code)
+  public void nameOfDay(Day day)
      {
-    switch(code.toUpperCase())
+    switch(day)
       {
-      case "ONE":
+      case MONDAY:
         System.out.println("Monday");
         break;
-      case "TWO":
+      case TUESDAY:
         System.out.println("Tuesday");
         break;
-      case "THREE":
+      case WEDNESDAY:
         System.out.println("Wednesday");
         break;
-      case "FOUR":
+      case THURSDAY:
         System.out.println("Thursday");
         break;
-      case "FIVE":
+      case FRIDAY:
         System.out.println("Friday");
         break;
-      case "SIX":
+      case SATURDAY:
         System.out.println("Saturday");
         break;
-      case "SEVEN":
+      case SUNDAY:
         System.out.println("Sunday");
         break;
     }
